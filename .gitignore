@@ -1,1 +1,6 @@
+#pastas
 node_modules
+
+#arquivos
+package-lock.json
+package.json
