@@ -1,4 +1,4 @@
-let nameCache = 'mws-v1';
+let nameCache = 'mws-v001';
 let cachesFiles = [
     './',
     './index.html',
@@ -23,14 +23,17 @@ self.addEventListener('install', (event) => {
 
 self.addEventListener('activate', (event) => {
     event.waitUntil(
+        caches.keys().then((cached) => {
 
-        caches.keys().then((cacheName) => {
-            return cacheName.startsWith('mws-') &&
-                cacheName != cachesFiles;
-        }).map((cacheName) => {
-            return cache.delete(cacheName);
-
-        }));
+            return Promise.all(
+                cached.map((cacheagora) => {
+                    if (cacheagora != nameCache) {
+                        return caches.delete(cacheagora);
+                    }
+                })
+            )
+        })
+    );
 });
 
 self.addEventListener('fetch', function(event) {
