@@ -1,4 +1,4 @@
-let nameCache = 'mws-v001';
+let nameCache = 'mws-v1';
 let cachesFiles = [
     './',
     './index.html',

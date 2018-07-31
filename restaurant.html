@@ -18,6 +18,7 @@
 <body class="inside">
     <!-- Beginning header -->
     <header>
+        <a href="#restaurant-container" class="skip-link">Skip Google Map</a>
         <!-- Beginning nav -->
         <nav>
             <h1><a href="/">Restaurant Reviews</a></h1>
@@ -34,12 +35,12 @@
     <!-- Beginning main -->
     <main id="maincontent">
         <!-- Beginning map -->
-        <section id="map-container">
+        <section id="map-container" title="Google Maps" role="application">
             <div id="map"></div>
         </section>
         <!-- End map -->
         <!-- Beginning restaurant -->
-        <section id="restaurant-container">
+        <section id="restaurant-container" tabindex="-1">
             <h1 id="restaurant-name"></h1>
             <img id="restaurant-img">
             <p id="restaurant-cuisine"></p>

@@ -160,8 +160,7 @@ createRestaurantHTML = (restaurant) => {
     const li = document.createElement('li');
 
     const image = document.createElement('img');
-    image.setAttribute('alt', `${restaurant.name}. ${restaurant.address}`);
-    console.log(restaurant.name);
+    image.alt = `Restaurant: ${restaurant.name}. Address: ${restaurant.address}`;
     image.className = 'restaurant-img';
     image.src = DBHelper.imageUrlForRestaurant(restaurant);
     li.append(image);
@@ -170,8 +169,8 @@ createRestaurantHTML = (restaurant) => {
     name.innerHTML = restaurant.name;
     li.append(name);
 
-    const neighborhood = document.createElement('p');
-    li.append(neighborhood);
+    // const neighborhood = document.createElement('p');
+    // li.append(neighborhood);
 
     const address = document.createElement('p');
     address.innerHTML = restaurant.address;
