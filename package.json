@@ -1,4 +1,5 @@
 {
+  "homepage": ".",
   "name": "restaurant",
   "version": "1.0.0",
   "description": "Projeto da Udacity",
@@ -15,7 +16,6 @@
   "bugs": {
     "url": "https://github.com/oseiasal/mws-restaurant-stage-1/issues"
   },
-  "homepage": "https://github.com/oseiasal/mws-restaurant-stage-1#readme",
   "devDependencies": {
     "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
